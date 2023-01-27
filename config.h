@@ -212,8 +212,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ XK_ANY_MOD,           XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ XK_ANY_MOD,           XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ MODKEY,               XK_k,     			kscrollup,      {.i =  kbscrollincrement} },
-	{ MODKEY,               XK_j,   				kscrolldown,    {.i =  kbscrollincrement} },
+	{ MODKEY,               XK_k,           kscrollup,      {.i =  kbscrollincrement} },
+	{ MODKEY,               XK_j,           kscrolldown,    {.i =  kbscrollincrement} },
 };
 
 /*
@@ -291,7 +291,7 @@ static Key key[] = {
 	{ XK_KP_Delete,     ControlMask,    "\033[3;5~",    +1,    0},
 	{ XK_KP_Delete,     ShiftMask,      "\033[2K",      -1,    0},
 	{ XK_KP_Delete,     ShiftMask,      "\033[3;2~",    +1,    0},
-	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[P",       -1,    0},
+	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",      -1,    0},
 	{ XK_KP_Delete,     XK_ANY_MOD,     "\033[3~",      +1,    0},
 	{ XK_KP_Multiply,   XK_ANY_MOD,     "\033Oj",       +2,    0},
 	{ XK_KP_Add,        XK_ANY_MOD,     "\033Ok",       +2,    0},
@@ -359,7 +359,7 @@ static Key key[] = {
 	{ XK_Delete,        ControlMask,    "\033[3;5~",    +1,    0},
 	{ XK_Delete,        ShiftMask,      "\033[2K",      -1,    0},
 	{ XK_Delete,        ShiftMask,      "\033[3;2~",    +1,    0},
-	{ XK_Delete,        XK_ANY_MOD,     "\033[P",       -1,    0},
+	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      -1,    0},
 	{ XK_Delete,        XK_ANY_MOD,     "\033[3~",      +1,    0},
 	{ XK_BackSpace,     XK_NO_MOD,      "\177",          0,    0},
 	{ XK_BackSpace,     Mod1Mask,       "\033\177",      0,    0},
