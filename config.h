@@ -8,9 +8,9 @@
 static char *font = "monospace:pixelsize=16:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:pixelsize=14:antialias=true:autohint=true",
+	"NotoColorEmoji:pixelsize=10:antialias=true:autohint=true",
 };
-static int borderpx = 0;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -57,7 +57,7 @@ int allowwindowops = 0;
  * near minlatency, but it waits longer for slow updates to avoid partial draw.
  * low minlatency will tear/flicker more, as it can "detect" idle too early.
  */
-static double minlatency = 8;
+static double minlatency = 2;
 static double maxlatency = 33;
 
 /*
